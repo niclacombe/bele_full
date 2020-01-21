@@ -1,0 +1,48 @@
+.map {
+  display: flex;
+  justify-content: center;
+  font-family: 'Cabin', sans-serif; }
+  .map__map-container {
+    position: relative;
+    width: 60%;
+    max-width: 1000px; }
+    .map__map-container img.below {
+      width: 100%;
+      position: relative;
+      z-index: 1; }
+    .map__map-container .over {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 2;
+      width: 100%; }
+  .map__data {
+    padding-left: 2rem;
+    color: #FFFFFF;
+    min-width: 300px; }
+    .map__data .sticky {
+      position: -webkit-sticky;
+      position: sticky;
+      top: 2rem; }
+    .map__data__loading {
+      display: none;
+      text-align: center; }
+      .map__data__loading img {
+        max-width: 100px; }
+    .map__data__container {
+      max-width: 300px;
+      display: none; }
+      .map__data__container ul {
+        list-style: none;
+        padding: 0; }
+        .map__data__container ul li .trame__description {
+          display: none;
+          padding-left: 1rem; }
+          .map__data__container ul li .trame__description p {
+            font-weight: normal;
+            font-size: 16px; }
+        .map__data__container ul a {
+          text-decoration: none;
+          color: #FFFFFF; }
+
+/*# sourceMappingURL=carte.css.map */

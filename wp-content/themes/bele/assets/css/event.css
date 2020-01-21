@@ -1,0 +1,50 @@
+.eventitre {
+  font-size: 45px;
+  text-transform: uppercase;
+}
+
+.entete1 {
+  text-align: center;
+  background-image: url(Gladiamort.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 1em;
+  color: white;
+}
+
+.entete1 a {
+  color: white;
+}
+
+.entete2 {
+  text-align: center;
+  background-image: url(Gladiamort.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 1em;
+  color: white;
+}
+
+.entete2 a {
+  color: white;
+}
+
+.collapsiblevent {
+  color: white;
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  text-align: right;
+  outline: none;
+  font-size: 15px;
+  background: none;
+}
+
+.content {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #CCBEAC;
+  color: #1d2326;
+}

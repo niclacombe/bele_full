@@ -1,0 +1,193 @@
+
+
+@media all and (min-width: 600px) {
+  .navigation ul {
+    flex-flow: row;
+  }
+}
+
+.bgnoir {
+  color: white;
+  background-color: #1d2326;
+  line-height: 1.5em;
+}
+
+.intro{
+
+  padding: 2em;
+  font-family: 'Roboto', sans-serif;
+}
+
+@media all and (min-width: 600px) {
+  .intro p {
+    width: 50%;
+  }
+}
+
+.categorie {
+  flex-flow: row;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  float: none;
+}
+
+.categorie > div {
+  flex: 1 100%;
+  font-family: 'Roboto', sans-serif;
+}
+
+@media all and (min-width: 600px) {
+  .categorie > div {
+    flex: 1 30%;
+  }
+}
+
+.categorie > div > h2 {
+  text-align: center;
+}
+
+.categorie > .padd {
+  padding: 2em;
+}
+
+.categorie2 {
+  flex-flow: row;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  float: none;
+}
+
+.categorie2 > div {
+  flex: 1 100%;
+  font-family: 'Roboto', sans-serif;
+}
+
+@media all and (min-width: 600px) {
+  .texte4 p {
+    width: 75%;
+  }
+}
+
+.texte4 {
+  padding: 2em;
+}
+
+.question h2 {
+  font-family: 'MS Shell Dlg 2';
+  font-size: 20px;
+  padding-left: 26px;
+  text-align: left;
+}
+
+.collapsiblenew {
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  outline: none;
+  background: none;
+  text-align: left;
+  padding-left: 2em;
+  border-bottom: solid 1px;
+}
+
+.contentnew {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  padding: 0;
+}
+
+.coverimage {
+  width: 100%;
+  min-height: 12em;
+  background-size: cover;
+  background-position: center;
+}
+
+.media21 {
+  background-image: url("media21.jpg");
+}
+
+.media22 {
+  background-image: url("media22.jpg");
+}
+
+.media23 {
+  background-image: url("media23.jpg");
+}
+
+.media24 {
+  background-image: url("media24.jpg");
+}
+
+.media25 {
+  background-image: url("media25.jpg");
+}
+
+.media26 {
+  background-image: url("media26.jpg");
+}
+
+.media27 {
+  background-image: url("media27.jpg");
+}
+
+.media28 {
+  background-image: url("media28.jpg");
+}
+
+.media29 {
+  background-image: url("media29.jpg");
+}
+
+.media31 {
+  background-image: url("media31.jpg");
+}
+
+.media32 {
+  background-image: url("media32.jpg");
+}
+
+.media33 {
+  background-image: url("media33.jpg");
+}
+
+.media34 {
+  background-image: url("media34.jpg");
+}
+
+.media35 {
+  background-image: url("media35.jpg");
+}
+
+.media36 {
+  background-image: url("media36.jpg");
+}
+
+.media37 {
+  background-image: url("media37.jpg");
+}
+
+.media38 {
+  background-image: url("media38.jpg");
+}
+
+.media39 {
+  background-image: url("media39.jpg");
+}
+
+.media4 {
+  background-image: url("Village.jpg");
+}
+
+.media5 {
+  background-image: url("media5.jpg");
+}
+
+.media6 {
+  background-image: url("media6.jpg");
+
+}

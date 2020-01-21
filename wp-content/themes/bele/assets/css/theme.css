@@ -1,0 +1,154 @@
+html{
+  font-size: 18px;
+}
+body {
+  background-color: #1D2326;
+  background-repeat: repeat;
+  margin: 0;
+}
+
+.header {
+  background-color: #1d2326;
+  margin: 0 auto;
+}
+
+.container{
+  background-color: #1D2326;
+  font-family: 'Cabin', sans-serif;
+}
+
+#menu-toggle{
+  background-color: rgba(0,0,0,0);
+  border: none;
+  position: absolute;
+  right: 0.5em;
+  top: 0.5em;
+  font-size: 2em;
+}
+
+#menu-toggle span{
+  color: #FFFFFF;
+  margin: auto;
+}
+
+.banniere {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.banniere img {
+  flex: 1 100%;
+  width: 100%;
+}
+
+.menu-main-menu-container ul li a {
+  font-family: 'Roboto', sans-serif;
+  color: #6B6673;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+@media screen and (max-width: 768px) {
+
+  .container{
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .header{
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .header .menu-main-menu-container {
+    display: none;
+  }
+
+  .menu-main-menu-container ul {
+    list-style: none;
+    flex-flow: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+  }
+
+  .menu-main-menu-container ul li{
+    padding: 0.5em;
+  }
+
+  .facebook {
+    margin: 0 auto;
+    width: 25%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .banniere img {
+    height: 15em;
+  }
+
+  #menu-toggle{
+    display: none;
+  }
+
+  .container{
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .menu-main-menu-container {
+    width: 1024px;
+    margin: 0 auto;
+  }
+
+  .menu-main-menu-container ul {
+    list-style: none;
+    flex-flow: row;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 0;
+  }
+
+  .menu-main-menu-container ul li{
+    padding: 0.5em;
+  }
+
+  .facebook {
+    float: right;
+    width: 25%;
+  }
+}
+
+..menu-main-menu-containerigation a {
+  font-family: 'Roboto', sans-serif;
+  color: #1d2326;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.footer{
+  background-color: #1d2326;
+  text-align: center;
+  color: #fff;
+  padding: 1em 0 5em 0;
+  font-family: 'Cabin', sans-serif;
+}
+
+.facebook a span{
+  color: #4267b2;
+}
+
+.copyright {
+  text-align: center;
+  float: right;
+  width: 100%;
+}
+
+/*
+*/
