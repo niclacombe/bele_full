@@ -138,10 +138,6 @@
                                     <li><a href="<?php echo site_url('passes/passesParJoueur'); ?>">Gérer les Passes par Joueur</a></li>
                                 <?php endif; ?>
 
-                                <?php if($_SESSION['infoUser']->NiveauAcces >= 6): ?>
-                                    <li><a href="<?php echo site_url('Mecenat'); ?>">Mécénat</a></li>
-                                <?php endif; ?> 
-
                                 <?php if($_SESSION['infoUser']->NiveauAcces >= 5): ?>
                                     <li><a href="<?php echo site_url('Administration/acces'); ?>">Modifier Niveau Accès</a></li>
                                 <?php endif; ?>
@@ -194,14 +190,6 @@
                                 </ul>
                             </li>
                         <?php endif; ?>
-                        <li>
-                            <a href="#"><i class="fa fa-eye fa-fw"></i>Consultations<span class="fa arrow"></span></a>
-                            <ul class="nav nav-second-level">
-                                <li><a href="/PERSONNAGES/main.php" target="_blank">Personnages</a></li>
-                                <li><a href="/GROUPES/main.php" target="_blank">Groupes</a></li>                                
-                            </ul>
-                            <!-- /.nav-second-level -->
-                        </li>
                         <li>
                             <a href="/BD" target="_blank"><span class="fa fa-home fa-reverse"></span>Retour à la BD</a>
                         </li>
