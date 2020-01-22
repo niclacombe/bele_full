@@ -5,6 +5,10 @@
             <div class="col-xs-12">
                 <h1 class="page-header">Outils de Gestion</h1>
                 <h2>Statistiques</h2>
+            </div>
+        </div>
+
+        
 
                 <!--<h3>Présence par heure de <?php echo $presencesCount['activite']->Nom; ?></h3>
                 <div class="row">

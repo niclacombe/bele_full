@@ -53,8 +53,8 @@ class Home extends CI_Controller {
 				$this->session->set_userdata('infoUser',$infoUser);
 
 		    	$this->load->view('template/header', $data);
-		        $this->load->view('home', $data);
-		        $this->load->view('template/footer',$data);
+	        $this->load->view('home', $data);
+	        $this->load->view('template/footer',$data);
 	    	}
 	    }
 	}

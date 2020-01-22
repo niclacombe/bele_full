@@ -18,7 +18,7 @@
           <input type="hidden" name="IdTrame" value="<?= $trame->Id; ?>">
           <div class="form-group col-xs-12 col-md-6">
             <label for="Numero">Numéro</label>
-            <input type="number" name="Numero" min="0" class="form-control">
+            <input type="number" name="Numero" min="1" max="9999" class="form-control">
           </div>
 
           <div class="form-group col-xs-12 col-md-6">

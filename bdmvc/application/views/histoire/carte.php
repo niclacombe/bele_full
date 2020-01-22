@@ -26,22 +26,22 @@
     <div class="row">
       <div class="col-xs-12">
         <ul class="nav nav-tabs" role="tablist">
-          <li role="presentation" class="active">
+          <li role="presentation" class="<?php if(!isset($active) || $active == 'baronnies'): ?>active <?php endif; ?>">
             <a href="#baronnies" aria-controls="baronnies" role="tab" data-toggle="tab">Baronnies</a>
           </li>
-          <li role="presentation">
-            <a href="#comtes" aria-controls="comtes" role="tab" data-toggle="tab">Comtés</a>
+          <li role="presentation" class="<?php if(isset($active) && $active == 'comtes'): ?>active <?php endif; ?>">
+            <a href="#comtes"  aria-controls="comtes" role="tab" data-toggle="tab">Comtés</a>
           </li>
-          <li role="presentation">
-            <a href="#duches" aria-controls="duches" role="tab" data-toggle="tab">Duchés</a>
+          <li role="presentation" class="<?php if(isset($active) && $active == 'duches'): ?>active <?php endif; ?>">
+            <a href="#duches"  aria-controls="duches" role="tab" data-toggle="tab">Duchés</a>
           </li>
-          <li role="presentation">
+          <li role="presentation" class="<?php if(isset($active) && $active == 'royaumes'): ?>active <?php endif; ?>">
             <a href="#royaumes" aria-controls="royaumes" role="tab" data-toggle="tab">Royaumes</a>
           </li>
         </ul>
 
         <div class="tab-content col-md-8 col-md-offset-2 col-xs-12">
-          <div role="tabpanel" class="tab-pane active" id="baronnies">
+          <div role="tabpanel" class="tab-pane <?php if(!isset($active) || $active == 'baronnies'): ?>active <?php endif; ?>" id="baronnies">
             <h2>Baronnies</h2>
 
             <?php if( !empty($baronnies) ): ?>
@@ -74,7 +74,7 @@
             <?php endif; ?>
           </div>
 
-          <div role="tabpanel" class="tab-pane" id="comtes">
+          <div role="tabpanel" class="tab-pane <?php if(isset($active) && $active == 'comtes'): ?>active <?php endif; ?>" id="comtes">
             <h2>Comtés</h2>
 
             <?php if( !empty($comtes) ): ?>
@@ -109,7 +109,7 @@
             <?php endif; ?>
           </div>
 
-          <div role="tabpanel" class="tab-pane" id="duches">
+          <div role="tabpanel" class="tab-pane <?php if(isset($active) && $active == 'duches'): ?>active <?php endif; ?>" id="duches">
             <h2>Duchés</h2>
 
             <?php if( !empty($duches) ): ?>
@@ -142,7 +142,7 @@
             <?php endif; ?>
           </div>
           
-          <div role="tabpanel" class="tab-pane" id="royaumes">
+          <div role="tabpanel" class="tab-pane <?php if(isset($active) && $active == 'royaumes'): ?>active <?php endif; ?>" id="royaumes">
             <h2>Royaumes</h2>
 
             <?php if( !empty($royaumes) ): ?>
@@ -216,7 +216,8 @@
           </div>
 
           <div class="form-group col-xs-12">
-            <button class="btn btn-primary">Sauvegarder <span class="fa fa-save"></span></button>
+            <button type="submit" class="btn btn-primary">Sauvegarder <span class="fa fa-save"></span></button>
+            <button class="btn btn-primary">Annuler <span class="fa fa-window-close"></span></button>
           </div>
 
           
@@ -278,7 +279,8 @@
           </div>
 
           <div class="form-group col-xs-12">
-            <button class="btn btn-primary">Sauvegarder <span class="fa fa-save"></span></button>
+            <button type="submit" class="btn btn-primary">Sauvegarder <span class="fa fa-save"></span></button>
+            <button class="btn btn-primary">Annuler <span class="fa fa-window-close"></span></button>
           </div>
 
           
@@ -324,7 +326,8 @@
           </div>
 
           <div class="form-group col-xs-12">
-            <button class="btn btn-primary">Sauvegarder <span class="fa fa-save"></span></button>
+            <button type="submit" class="btn btn-primary">Sauvegarder <span class="fa fa-save"></span></button>
+            <button class="btn btn-primary">Annuler <span class="fa fa-window-close"></span></button>
           </div>
 
           
@@ -358,7 +361,8 @@
           </div>
 
           <div class="form-group col-xs-12">
-            <button class="btn btn-primary">Sauvegarder <span class="fa fa-save"></span></button>
+            <button type="submit" class="btn btn-primary">Sauvegarder <span class="fa fa-save"></span></button>
+            <button class="btn btn-primary">Annuler <span class="fa fa-window-close"></span></button>
           </div>
 
         </form>

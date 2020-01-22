@@ -24,7 +24,7 @@ class Histoire extends CI_Controller {
     $data = array();
   }
 
-  public function carte($json = false){
+  public function carte($json = false, $active = null){
     $this->load->model('histoire_model');
 
     $data = array(
@@ -33,6 +33,7 @@ class Histoire extends CI_Controller {
       'duches' => $this->histoire_model->getDuches(),
       'royaumes' => $this->histoire_model->getRoyaumes(),
       'jsonSuccess' => $json,
+      'active' => $active,
     );
 
     $this->load->view('template/header', $data);
@@ -86,7 +87,7 @@ class Histoire extends CI_Controller {
 
     $this->histoire_model->editBaronnie($idBaronnie);
 
-    redirect('Histoire/carte/', 'refresh');
+    redirect('Histoire/carte/false/baronnies', 'refresh');
   }
 
   public function editComte($idComte){
@@ -94,7 +95,7 @@ class Histoire extends CI_Controller {
 
     $this->histoire_model->editComte($idComte);
 
-    redirect('Histoire/carte/', 'refresh');
+    redirect('Histoire/carte/false/comtes', 'refresh');
   }
 
   public function editDuche($codeDuche){
@@ -102,7 +103,7 @@ class Histoire extends CI_Controller {
 
     $this->histoire_model->editDuche($codeDuche);
 
-    redirect('Histoire/carte/', 'refresh');
+    redirect('Histoire/carte/false/duches', 'refresh');
   }
 
   public function editRoyaume($codeRoyaume){
@@ -110,7 +111,7 @@ class Histoire extends CI_Controller {
 
     $this->histoire_model->editRoyaume($codeRoyaume);
 
-    redirect('Histoire/carte/', 'refresh');
+    redirect('Histoire/carte/false/royaumes', 'refresh');
   }
 
   public function trames($json = false){

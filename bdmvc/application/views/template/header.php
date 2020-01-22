@@ -161,7 +161,7 @@
 
                                 <li><a href="<?php echo site_url('Histoire/trames'); ?>">Trames <span class="fa fa-bookmark"></span></a></li>
 
-                                <li><a href="<?php echo site_url('Histoire/carte'); ?>">Carte Interactive <span class="fa fa-map"></span></a></li>
+                                <li><a href="<?php echo site_url('Histoire/carte') . '/' . false . '/' . 'duches'; ?>">Carte Interactive <span class="fa fa-map"></span></a></li>
 
                             </ul>
                             <!-- /.nav-second-level -->
