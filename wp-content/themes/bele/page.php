@@ -16,23 +16,15 @@
   }
   ?>
 
-  <?php 
-    if(isset($vSubnavItems) && !empty($vSubnavItems)) :
-  ?>
+  <?php if(isset($vSubnavItems) && !empty($vSubnavItems)) : ?>
     <div id="subnav" class="ligne subnav">
       <ul>
-  <?php
-      foreach ($vSubnavItems as $item) :
-  ?>
-        <li><a class="easyscroll" href="<?php echo '#' .sanitize_title($item); ?>"><?php echo $item; ?></a></li>
-  <?php
-      endforeach;
-  ?>
+        <?php foreach ($vSubnavItems as $item) : ?>
+          <li><a class="easyscroll" href="<?php echo '#' .sanitize_title($item); ?>"><?php echo $item; ?></a></li>
+        <?php endforeach; ?>
       </ul>
     </div>
-  <?php
-    endif;    
-  ?>
+  <?php endif; ?>
     
   <?php 
   if(have_rows('page_row')) :

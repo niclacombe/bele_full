@@ -21,7 +21,7 @@
 
           <div class="form-group col-xs-4">
             <label for="Id">Identification  (Chiffres seulement)*</label>
-            <input type="text" name="Id" class="form-control" required placeholder="XXXX">
+            <input type="number" min="1" max="9999" name="Id" class="form-control" required placeholder="XXXX">
             <hr>
             <label for="Nom">Nom de la Trame*</label>
             <input type="text" name="Nom" class="form-control" required placeholder="Nom">

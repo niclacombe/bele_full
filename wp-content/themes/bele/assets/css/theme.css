@@ -15,6 +15,7 @@ body {
 .container{
   background-color: #1D2326;
   font-family: 'Cabin', sans-serif;
+  letter-spacing: 1px;
 }
 
 #menu-toggle{

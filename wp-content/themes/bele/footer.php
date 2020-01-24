@@ -7,7 +7,7 @@
 
       </div>
       <div class="copyright">
-        <p>Copyright 2019 - Les Terres de Bélénos</p>
+        <p>Copyright 2020 - Les Terres de Bélénos</p>
       </div>
 
   </div>
