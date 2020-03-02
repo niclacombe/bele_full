@@ -90,21 +90,6 @@
         	</div>
         </div>
         <div class="row">
-        	<div class="col-xs-12 col-md-7">
-	        	<h3>Travail</h3>
-	        	<?php if($travail): ?>
-	        		<h4>Ce joueur a travaillé pour <?php echo $travail->Nom ?><strong></strong></h4>
-	        		<a href="<?php echo site_url('personnages/deleteTravail/' .$infoPerso->Id .'/' .$infoIndiv->Id ); ?>">
-	        			<button class="btn btn-primary">Payer le Travail &nbsp<span class="fa fa-btc"></span></button>
-	    			</a>
-	        	<?php else:  ?>
-	        		<h4>Ce joueur n'a travaillé pour aucun groupe ce mois-ci.</h4>
-	        	<?php endif; ?>
-                <?php if($_SESSION['infoUser']->NiveauAcces >= 5): ?>
-                    <hr><h3>Historique du personnage</h3>
-                    <button class="btn btn-primary pop" data-pop="lireBG">Lire l'histoire</button>
-                <?php endif; ?>
-        	</div>
             <?php if($_SESSION['infoUser']->NiveauAcces >= 5): ?>
                 <div class="col-xs-12 col-md-5">
                     <h3>Titres</h3>

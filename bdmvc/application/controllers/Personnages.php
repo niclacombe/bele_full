@@ -47,8 +47,6 @@ class Personnages extends CI_Controller {
 		$data['XP'] = $this->personnages_model->getXP($idPerso);
 		$data['PV'] = $this->personnages_model->getPV($idPerso);
 
-		$data['travail'] = $this->personnages_model->getTravail($idPerso);
-
 		$data['titres'] = $this->personnages_model->getTitres($idPerso);
 
 		$data['allTitres'] = $this->personnages_model->getAllTitres($idPerso);
@@ -113,12 +111,6 @@ class Personnages extends CI_Controller {
 
 	public function declareMort($idPerso, $idIndiv){
 		$this->personnages_model->declareMort($idPerso);
-
-		redirect('/personnages/editPersonnage/' .$idPerso . '/' . $idIndiv ,'refresh');
-	}
-
-	public function deleteTravail($idPerso, $idIndiv){
-		$this->personnages_model->deleteTravail($idPerso);
 
 		redirect('/personnages/editPersonnage/' .$idPerso . '/' . $idIndiv ,'refresh');
 	}

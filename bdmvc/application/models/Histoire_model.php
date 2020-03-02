@@ -13,6 +13,7 @@ class Histoire_model extends CI_Model{
     $this->db->select('b.*, c.Nom AS NomComte');
     $this->db->from('db_histo.baronnies b');
     $this->db->join('db_histo.comtes c', 'c.Id = b.IdComte' , 'left');
+    $this->db->order_by('cast(b.Cadastre as unsigned)', 'asc');
 
     if($idComte){
       $this->db->where('b.IdComte', $idComte);
